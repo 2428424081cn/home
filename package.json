@@ -1,0 +1,19 @@
+{
+  "name": "home",
+  "private": true,
+  "version": "1.0.0",
+  "description": "起点 · 纯前端个人浏览器主页",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": "22.x"
+  },
+  "devDependencies": {
+    "vite": "^7.1.2"
+  }
+}
