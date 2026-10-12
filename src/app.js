@@ -59,7 +59,6 @@ function updateClock() {
   }
   const weekday = new Intl.DateTimeFormat('zh-CN', { weekday: 'long' }).format(now);
   document.querySelector('.date').textContent = `${now.getFullYear()} 年 ${now.getMonth() + 1} 月 ${now.getDate()} 日 · ${weekday}`;
-  document.querySelector('.date-mini').textContent = `${now.getMonth() + 1}月${now.getDate()}日 · ${weekday}`;
   document.getElementById('greeting-text').textContent = getGreeting(now);
   document.querySelector('.greeting use')?.setAttribute('href', now.getHours() >= 18 || now.getHours() < 5 ? '#moon' : '#sun');
 }
